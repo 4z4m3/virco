@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Focus Game</title>
+    <link rel="stylesheet" href="focus.css">
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar">
+              <a class="logo" href="index.html">Virco</a>
+              <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+              <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+            </nav>
+          </header>
+
+        <div id="game">
+            <div id="info">
+                <div id="diff-clock">
+                    <div id="diff">
+                        <p>Difficulty : <span id="diff-change">Easy</span></p>
+                    </div>
+                    <div id="clock">
+                        <p>00:<span id="seconds">10</span></p>
+                    </div>
+                </div>
+                
+               
+
+                
+            </div>
+            <h1 id="text-title">Find the " <span id="title-change">5</span> "</h1>
+            <div id="container">
+            </div>
+        </div>
+
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You've completed This Level!</div>
+            <div class="score_text">
+                <!-- Here I've inserted Score Result from JavaScript -->
+            </div>
+            <div class="buttons">
+                <button class="restart">Continue</button>
+                <button class="quit">Quit</button>
+            </div>
+        </div>
+
+        
+
+        <script src="focus.js"></script>
+    </body>

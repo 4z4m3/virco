@@ -1,0 +1,295 @@
+/* Importing Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+  overflow-y: hidden;
+    background-color: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+header .navbar {
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 50px;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+.navbar .logo span {
+  color: #0E5DDD;
+}
+
+.navbar .menu-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #0E5DDD;
+}
+
+.hero-section {
+  height: 100vh;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 0px;
+}
+
+.content{
+    display: flex;
+    background-color: #000;
+    padding: 30px;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.content img{
+    width: 380px ;
+    height: 680px;
+    filter: brightness(40%) blur(5px);
+    transition: 0.3s ease;
+    
+}
+
+.content img:hover{
+  filter: brightness(100%) blur(0px);
+  width: 390px ;
+  height: 690px;
+}
+
+.math-text p{
+  position: absolute;
+  font-size: 3em;
+  color: #fff;
+  transform: translate(115px, -400px);
+  z-index: 999;
+  text-align: center;
+  font-weight: 600;
+  line-height: 50px;
+
+}
+
+.memory-text p{
+  position: absolute;
+  font-size: 3em;
+  color: #fff;
+  transform: translate(90px, -400px);
+  z-index: 999;
+  text-align: center;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.focus-text p{
+  position: absolute;
+  font-size: 3em;
+  color: #fff;
+  transform: translate(115px, -400px);
+  z-index: 999;
+  text-align: center;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.hero-section .content h2 {
+  display: flex;
+  gap: 20px;
+  font-size: 3rem;
+  max-width: 600px;
+  line-height: 70px;
+}
+
+.hero-section .content p {
+  font-weight: 300;
+  max-width: 600px;
+  margin-top: 15px;
+}
+
+.hero-section .content button {
+  background: #fff;
+  padding: 12px 30px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 38px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.hero-section .content button:hover {
+  color: #fff;
+  background: #0E5DDD;
+}
+
+#close-menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+
+
+
+#hamburger-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .logo {
+    font-size: 1.7rem;
+  }
+
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #000;
+  }
+
+  .hero-section .content {
+    text-align: center;
+  }
+
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+  }
+
+  .hero-section .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+  
+  .hero-section .content button {
+    padding: 9px 18px;
+  }
+}
+
+.hero-section p{
+	margin:0;
+	overflow: hidden;
+}
+.hero-section p span{
+    margin-top: -5px;
+    font-size: 3rem;
+    color:#fff;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 46px;
+    display: none;
+    padding: 5px;
+}
+
+.cont-img img.appear{
+  animation: appear .2 ease;
+}
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.4;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.hero-section p span.text-in{
+	display: block;
+	animation: textIn .4s ease;
+}
+.hero-section p span.text-out{
+	animation: textOut .4s ease;
+}
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+}
+
+
+

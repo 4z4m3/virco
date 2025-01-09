@@ -1,0 +1,66 @@
+[
+    {
+        "image": "../assets2/argentina.png",
+        "name": "argentina"
+    },
+    {
+        "image": "../assets2/brazil.png",
+        "name": "brazil"
+    },
+    {
+        "image": "../assets2/china.png",
+        "name": "china"
+    },
+    {
+        "image": "../assets2/france.png",
+        "name": "france"
+    },
+    {
+        "image": "../assets2/germany.png",
+        "name": "germany"
+    },
+    {
+        "image": "../assets2/greece.png",
+        "name": "greece"
+    },
+    {
+        "image": "../assets2/indonesia.png",
+        "name": "indonesia"
+    },
+    {
+        "image": "../assets2/japan.png",
+        "name": "japan"
+    },
+    {
+        "image": "../assets2/russia.png",
+        "name": "russia"
+    },
+    {
+        "image": "../assets2/singapore.png",
+        "name": "singapore"
+    },
+    {
+        "image": "../assets2/korea.png",
+        "name": "korea"
+    },
+    {
+        "image": "../assets2/spain.png",
+        "name": "spain"
+    },
+    {
+        "image": "../assets2/uk.png",
+        "name": "uk"
+    },
+    {
+        "image": "../assets2/us.png",
+        "name": "us"
+    },
+    {
+        "image": "../assets2/portugal.png",
+        "name": "portugal"
+    },
+    {
+        "image": "../assets2/ghana.png",
+        "name": "ghana"
+    }
+]

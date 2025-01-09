@@ -1,0 +1,258 @@
+/* Importing Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+  overflow-y: hidden;
+  overflow-x: hidden;
+    background-color: #000;
+    
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+header .navbar {
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 50px;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+.navbar .logo span {
+  color: #0E5DDD;
+}
+
+.navbar .menu-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #0E5DDD;
+}
+
+.wave{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+  label{
+    font-size: 10vh;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+  }
+  label span{
+    display: inline-block;
+    font-size: 12vh;
+    font-weight: 500;
+    transition: 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  label:hover span{
+    color: #0E5DDD;
+    transform: translateY(-30px);
+  }
+  
+
+#close-menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .logo {
+    font-size: 1.7rem;
+  }
+
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #000;
+  }
+
+  .hero-section .content {
+    text-align: center;
+  }
+
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+  }
+
+  .hero-section .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+  
+  .hero-section .content button {
+    padding: 9px 18px;
+  }
+}
+
+@media (max-width: 920px) {
+  .exp, .exp-img {
+    width: 100%;
+  }
+}
+
+ button {
+    transform: translate(550px, 390px);
+    background: #fff;
+    padding: 12px 80px;
+    border: none;
+    font-size: 4vh;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+    font-weight: 600;
+  }
+  
+button:hover {
+    color: #fff;
+    background: #0E5DDD;
+  }
+
+  .main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    background: #000000;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social_icon,
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+
+
+
+footer .wave {
+    top: -20px;
+    left: 0;
+    width: 300%;
+    height: 100px;
+    background: #000000 url(/images/wave1.png);
+    background-size: 1000px 100px;
+
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animatewave 3s linear infinite;
+}
+
+
+@keyframes animatewave {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+
+}
+
+
+.zoom li a {
+    transition: 1s;
+}
+
+.zoom li a:hover {
+    transform: scale(1.1);
+}

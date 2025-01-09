@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Trial</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="time_trial.css" />
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">Virco</a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <div class="time-score">
+      <div id="clock">
+        <p>00:<span id="seconds">60</span></p>
+    </div>
+      <div id="score">
+        <p>Score:<span id="points">0</span></p>
+    </div>
+    </div>
+    
+    <div class="container">
+      
+      
+      <h3>Fill In The Blank With Correct Number Or Operator</h3>
+      <div id="question"></div>
+      <button id="submit-btn">Submit</button>
+      <p id="error-msg">Some Demo Error Message</p>
+    </div>
+    <div class="controls-container">
+      <p id="result"></p>
+      <button id="start-btn">Start Game</button>
+    </div>
+
+    <div class="result_box">
+      <div class="icon">
+          <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">You've completed the Time Trial!</div>
+      <div class="score_text">
+          <!-- Here I've inserted Score Result from JavaScript -->
+      </div>
+      <div class="buttons">
+          <button class="restart">Replay</button>
+          <button class="quit">Quit</button>
+      </div>
+  </div>
+
+    <!-- Script -->
+    <script src="time_trial.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cobafot.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="index.html">Virco</a>
+      <ul class="menu-links">
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+
+  
+
+
+  <div class="container">
+    <a href="time_trial.html">
+      <div class="card">
+        <div class="card__icon">
+          <img src="/images/home_math2.png" alt="icon.png" />
+        </div>
+        <h6>MATH GAMES</h6>
+        <ul>
+          <li>Interactive Activities</li>
+          <li>Learning Mathematical</li>
+          <li>Fun and Engaging</li>
+          <li>Problem-Solving</li>
+        </ul>
+      </div>
+    </a>
+    
+    <div class="card selected">
+      <div class="card__icon">
+        <img src="/images/home_memory.png" alt="icon.png" />
+      </div>
+      <h6>MEMORY GAMES</h6>
+      <ul>
+        <li>Challenge Players</li>
+        <li>Recall and Match Items</li>
+        <li>Cognitive Recall Abilitie</li>
+        <li>Improving Attention</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card__icon">
+        <img src="/images/home_focus.png" alt="icon.png" />
+      </div>
+      <h6>FOCUS GAMES</h6>
+      <ul>
+        <li>Strengthen Attention</li>
+        <li>Engaging Players</li>
+        <li>Mental Effort</li>
+        <li>Mind Concentration</li>
+      </ul>
+    </div>
+  </div>
+
+  <a href="#" class="link">
+    <span class="word">
+      <span class="char" data-char="f" style="--char-index: 0">f</span>
+      <span class="char" data-char="a" style="--char-index: 1">a</span>
+      <span class="char" data-char="c" style="--char-index: 2">c</span>
+      <span class="char" data-char="e" style="--char-index: 3">e</span>
+      <span class="char" data-char="b" style="--char-index: 4">b</span>
+      <span class="char" data-char="o" style="--char-index: 5">o</span>
+      <span class="char" data-char="o" style="--char-index: 6">o</span>
+      <span class="char" data-char="k" style="--char-index: 7">k</span>
+    </span>
+  </a>
+
+
+  <div class="marquee">
+    <h3>
+      <div class="marquee-wrapper">
+        <div class="marquee-title">
+          / We think <span class="text-stroke-black">creative</span>
+          &amp; make them
+          <span class="text-stroke-black">easy</span> / We think
+          <span class="text-stroke-black">creative</span>
+          &amp; make them
+          <span class="text-stroke-black">easy</span>
+        </div>
+        <div class="marquee-title">
+          / We think <span class="text-stroke-black">creative</span>
+          &amp; make them
+          <span class="text-stroke-black">easy</span> / We think
+          <span class="text-stroke-black">creative</span>
+          &amp; make them
+          <span class="text-stroke-black">easy</span>
+        </div>
+      </div>
+    </h3>
+  </div>
+
+  <script>
+// $(document).ready(function () {
+//   // Add a class on mouse enter in the card
+//   $(".card").on("mouseenter", function () {
+//     $(this).addClass("selected").siblings().removeClass("selected");
+//   });
+// });
+
+
+
+const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+
+      const txts=document.querySelector(".animate-text").children,
+               txtsLen=txts.length;
+           let index=0;
+          const textInTimer=3000,
+                textOutTimer=2800;
+
+
+
+  </script>
+</body>
+</html>
+

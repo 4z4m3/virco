@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">Virco</a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content-hero">
+        <h6>We Are</h6>
+        <h1>VIRCO</h1>
+        <p>Elevate Your Coginitive Horizon</p>
+      </div>
+      <div class="about-general">
+        <p>Virco (Virtual Cognitive) is a website designed to help users overcome social media addiction by engaging them in brain training exercises. Through interactive activities and personalized cognitive challenges, Virco promotes healthier habits for a balanced mind.</p>
+      </div>
+    </section>
+
+    <section class="body-section">
+        <img src="./images/profile1.png">
+        <p>"Virco is a website that I created because I saw the current condition of the young generation who are very addicted to social media. I hope Virco can help improve the cognitive abilities of the younger generation in the future"</p>
+        <div class="content-body">
+
+        </div>
+      </section>
+
+      <section class="body2-section">
+        <p>"I see Virco as an opportunity for the younger generation to become a more prosperous and advanced generation, with brain abilities that are still very strong. I hope that the results of the work I do can be useful for the cognitive abilities of the entire younger generation."</p>
+        <img src="./images/profile2.png">
+        <div class="content-body2">
+
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__addr">
+          <img src="./images/logo.png">
+          <!-- <h1 class="footer__logo">Virco</h1> -->
+              
+          <h2>Contact</h2>
+          
+          <address>
+            SMA Santa Maria 1 Bandung<br>
+                
+            <a class="footer__btn" href="xhezzgaming@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Pages</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+      
+              <li>
+                <a href="games.html">Games</a>
+              </li>
+                  
+              <li>
+                <a href="about.html">About</a>
+              </li>
+
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__item">
+            <h2 class="nav__title">Games</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="math_start.html">Math</a>
+              </li>
+      
+              <li>
+                <a href="memory_start.html">Memory</a>
+              </li>
+                  
+              <li>
+                <a href="focus_start.html">Focus</a>
+              </li>
+            </ul>
+          </li>
+        
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2024 Virco. All rights reserved.</p>
+          
+          <div class="legal__links">
+            <span>Elevate Your Cognitive Horizon</span>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>

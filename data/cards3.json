@@ -1,0 +1,82 @@
+[
+    {
+        "image": "../assets3/arsenic.png",
+        "name": "arsenic"
+    },
+    {
+        "image": "../assets3/boron.png",
+        "name": "boron"
+    },
+    {
+        "image": "../assets3/chlorine.png",
+        "name": "chlorine"
+    },
+    {
+        "image": "../assets3/chromium.png",
+        "name": "chromium"
+    },
+    {
+        "image": "../assets3/gold.png",
+        "name": "gold"
+    },
+    {
+        "image": "../assets3/holmium.png",
+        "name": "holmium"
+    },
+    {
+        "image": "../assets3/hydrogen.png",
+        "name": "hydrogen"
+    },
+    {
+        "image": "../assets3/iron.png",
+        "name": "iron"
+    },
+    {
+        "image": "../assets3/krypton.png",
+        "name": "krypton"
+    },
+    {
+        "image": "../assets3/lanthanum.png",
+        "name": "lanthanum"
+    },
+    {
+        "image": "../assets3/magnesium.png",
+        "name": "magnesium"
+    },
+    {
+        "image": "../assets3/neon.png",
+        "name": "neon"
+    },
+    {
+        "image": "../assets3/nitrogen.png",
+        "name": "nitrogen"
+    },
+    {
+        "image": "../assets3/nobelium.png",
+        "name": "nobelium"
+    },
+    {
+        "image": "../assets3/oxygen.png",
+        "name": "oxygen"
+    },
+    {
+        "image": "../assets3/platinum.png",
+        "name": "platinum"
+    },
+    {
+        "image": "../assets3/radon.png",
+        "name": "radon"
+    },
+    {
+        "image": "../assets3/scandium.png",
+        "name": "scandium"
+    },
+    {
+        "image": "../assets3/tungsten.png",
+        "name": "tungsten"
+    },
+    {
+        "image": "../assets3/ytterbium.png",
+        "name": "ytterbium"
+    }
+]

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">Virco</a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <div class="exp">
+          <a href="agrakristo06@gmail.com"><h2>EMAIL</h2></a>
+          <a href="https://www.instagram.com/rhyyu.s25?igsh=YjNvOWU5ZzU1Mm96"><h2>INSTAGRAM</h2></a>
+          <a href="085143658789"> <h2>WHATSAPP</h2></a>
+           
+
+            <p style="font-weight: 500;">
+              All content on the Virco website, including text, graphics, and software, is protected by copyright and may not be used, reproduced, or distributed without permission. For personal, non-commercial use only. Unauthorized use may result in legal action.</p>
+            <div class="additional">
+              
+        </div>
+        </div>
+
+            <div class="exp-img">
+                <img src="./images/contact_img1.png">
+            </div>
+      </div>
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
