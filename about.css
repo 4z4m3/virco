@@ -89,7 +89,7 @@ header .navbar {
   }
 
   .body-section p{
-    padding: 0px 190px;
+    padding: 0px 100px;
     font-size: 22px;
     color: #000;
     text-align: justify;
@@ -103,7 +103,7 @@ header .navbar {
   }
 
   .body2-section p{
-    padding: 0px 190px;
+    padding: 0px 100px;
     font-size: 22px;
     color: #fff;
     text-align: justify;
@@ -124,7 +124,7 @@ header .navbar {
   .about-general {
     color: white;
     text-align: center;
-    margin: 50px 300px;
+    margin: 20px 300px;
     font-size: 20px;
   }
 

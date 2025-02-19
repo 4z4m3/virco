@@ -70,15 +70,19 @@ header .navbar {
 .content{
     display: flex;
     background-color: #000;
-    padding: 30px;
     justify-content: center;
     gap: 30px;
-    margin-top: 60px;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    
+
 }
 
 .content img{
-    width: 380px ;
-    height: 680px;
+  width:22vw;
+  height: 80vh;
+  margin-top: 15%;
     filter: brightness(40%) blur(5px);
     transition: 0.3s ease;
     
@@ -86,43 +90,11 @@ header .navbar {
 
 .content img:hover{
   filter: brightness(100%) blur(0px);
-  width: 390px ;
-  height: 690px;
+  width:23vw;
+  height: 80vh;
 }
 
-.math-text p{
-  position: absolute;
-  font-size: 3em;
-  color: #fff;
-  transform: translate(115px, -400px);
-  z-index: 999;
-  text-align: center;
-  font-weight: 600;
-  line-height: 50px;
 
-}
-
-.memory-text p{
-  position: absolute;
-  font-size: 3em;
-  color: #fff;
-  transform: translate(90px, -400px);
-  z-index: 999;
-  text-align: center;
-  font-weight: 600;
-  line-height: 50px;
-}
-
-.focus-text p{
-  position: absolute;
-  font-size: 3em;
-  color: #fff;
-  transform: translate(115px, -400px);
-  z-index: 999;
-  text-align: center;
-  font-weight: 600;
-  line-height: 50px;
-}
 
 .hero-section .content h2 {
   display: flex;
